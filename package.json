@@ -1,0 +1,21 @@
+{
+  "name": "at1-4-j-i2026",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/chu-david/AT1-4-J-I2026#readme",
+  "bugs": {
+    "url": "https://github.com/chu-david/AT1-4-J-I2026/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chu-david/AT1-4-J-I2026.git"
+  },
+  "license": "ISC",
+  "author": "JM & ID",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.9.1",
+    "globals": "^17.11.0"
+  }
+}

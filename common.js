@@ -11,7 +11,7 @@ export function readText(file) {
 
 export function writeText(file, content) {
   try {
-    fs.writeFileSync("./output/" + file, String(content));
+    fs.writeFileSync("./output/" + file, String(content).replace(/,/g, "\n"));
   } catch (err) {
     console.error(err);
   }

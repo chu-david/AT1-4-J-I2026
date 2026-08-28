@@ -16,21 +16,16 @@ function main1() {
       }
     }
     for (let j = 0; j < group.length; j++) {
-      let counter = 0;
-      for (let h = 0; h < group[0].length; h++) {
-        if (group[0][h] == group[j][h]) {
-          counter++;
-        }
-      }
-      if (counter != group[0].length) {
+      if (group[j].split("").sort().join("") != group[0].split("").sort().join("")) {
         group.splice(group.indexOf(group[j]), 1);
       }
     }
     for (let j = 0; j < group.length; j++) {
       anagramText.splice(anagramText.indexOf(group[j]), 1);
     }
+    console.log(group);
     console.log("\n");
-    // writeText("anagram" + currentGroup + ".txt", group);
+    writeText("anagram" + currentGroup + ".txt", group);
     currentGroup++;
   }
 }
